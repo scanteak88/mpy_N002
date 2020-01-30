@@ -1,0 +1,10 @@
+{
+"DEVTYPE":"N001",
+"F1":{"DAT":0,"OFFSET":0,"ENB":1,"TYPE":"field1"},
+"F2":{"DAT":0,"OFFSET":0,"ENB":1,"TYPE":"field2"},
+"F3":{"DAT":0,"OFFSET":0,"ENB":0,"TYPE":"field3"},
+"R1":{"DAT":0,"AUTO":0,"ST":"0800","END":"1800","INTERVAL":"0100"},
+"R2":{"DAT":0,"AUTO":0,"ST":"0800","END":"1800","INTERVAL":"0100"},
+"R3":{"DAT":0,"AUTO":0,"ST":"0800","END":"1800","INTERVAL":"0100"},
+"R4":{"DAT":0,"AUTO":0,"ST":"0800","END":"1800","INTERVAL":"0100"}
+}
