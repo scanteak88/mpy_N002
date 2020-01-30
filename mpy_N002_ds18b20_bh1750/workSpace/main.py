@@ -94,7 +94,6 @@ def do_connect():
             wifiled_flag=3
             print('Network connected!')
 def send_data(dattime,dattm,datrh):
-    global wifi_count,wifiled_flag
     if sta.isconnected():
         wifi_count=0
         wifiled_flag=3
