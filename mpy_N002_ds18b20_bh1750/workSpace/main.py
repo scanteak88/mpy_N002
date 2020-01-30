@@ -4,17 +4,17 @@ import time
 import ujson
 from machine import Pin
 from machine import Timer
-import webssdset
+import webssdset 
 
 WAIT_FOR_CONNECT=webssdset.diylib.WAIT_FOR_CONNECT
 sta=webssdset.diylib.network.WLAN(webssdset.diylib.network.STA_IF)
 sta.active(True)
 tim=webssdset.diylib.tim
 tmoffsetdat=0
-rhoffsetdat=0
+rhoffsetdat=0 
 chksw = Pin(16, Pin.IN)#D0
 #DRVR4=webssdset.diylib.DRVR4#D8
-tick_count=webssdset.diylib.tick_count
+tick_count=webssdset.diylib.tick_count #test count 
 wifi_count=webssdset.diylib.wifi_count
 wifiled_flag=webssdset.diylib.wifiled_flag
 inchksw=webssdset.diylib.inchksw
