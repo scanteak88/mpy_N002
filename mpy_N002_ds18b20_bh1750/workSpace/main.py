@@ -41,7 +41,7 @@ def tick(t):
         print("reload jsysoam files ...")
     if (tick_count%xx)==0:
         webssdset.diylib.syspam["GETTIME"]=now()
-        webssdset.diylib.sysgpio["F1"]["DAT"],webssdset.diylib.sysgpio["F2"]["DAT"] =  getdht22()
+        webssdset.diylib.sysgpio["F1"]["DAT"],webssdset.diylib.sysgpio["F2"]["DAT"] = getdht22()
         if webssdset.diylib.sysgpio["F1"]["DAT"]<1000:
             send_data(webssdset.diylib.syspam["GETTIME"],webssdset.diylib.sysgpio["F1"]["DAT"],webssdset.diylib.sysgpio["F2"]["DAT"])
         else:
@@ -127,7 +127,7 @@ def now():
     t="%s%s%s-%02d:%02d:%02d"%(Y,M,D,H,m,S)
     return t
 def getdht22():
-	# === get wtm ===
+	# === getwtm ===
     try:
         temp =float(webssdset.diylib.GETBH1750.getds18x20())
     except:
@@ -135,7 +135,7 @@ def getdht22():
         #hum=100
     #print('Humidity: {}%'.format(hum))
     print('WTM: %s'%str(temp))
-	# === get lux === 
+	# === getlux === 
     try:
         hum = int(webssdset.diylib.GETBH1750.getlux())
     except:
